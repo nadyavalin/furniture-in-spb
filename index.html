@@ -13,74 +13,100 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="logo-nav">
-                <a href="#"><img src="./assets/svg/logo.svg"></a>
-                <nav>
-                    <a href=#about>О компании</a>
-                    <a href=#catalog>Каталог</a>
-                    <a href=#reviews>Отзывы</a>
-                    <a href=#questions>Часто задаваемые вопросы</a>
-                    <a href=#contacts>Контакты</a>
-                </nav>
-            </div>
-            <div class="phone">
-                <p class="phone__figures"><a href="tel:88002060107">8 (800) 206 01 07</a></p>
-                <p class="phone__text"><a href="tel:88002060107" class="phone__link">Обратный звонок</a></p>
+            <div class="wrapper header__wrap">
+                <div class="header__container">
+                    <div class="logo">
+                        <img src="./assets/svg/logo.svg">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href=#about>О компании</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href=#catalog>Каталог</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href=#reviews>Отзывы</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href=#questions>Часто задаваемые вопросы</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href=#contacts>Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:88002060107" class="header__phone">8 (800) 206 01 07</a>
+                    <button href="tel:88002060107" class="phone__link">Обратный звонок</button>
+                </div>
             </div>
         </header>
         <main>
             <section class="intro">
-                <div class="socials">
-                    <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/youtube.svg" alt="Youtube" class="socials__img"></a>
-                    <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/vk.svg" alt="VK" class="socials__img"></a>
-                    <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/instagram.svg" alt="Instagram" class="socials__img"></a>
-                </div>
-                <div class="slider">
-                    <img src="./assets/img/image_1.jpg" alt="Стул">
-                    <div class="slider__arrows">
-                        <a href="#prev" class ="slider__arrow">
-                            <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM46 7L1 7V9L46 9V7Z" fill="#D3BE73"/>
-                            </svg>
-                        </a>
-                        <a href="#next" class ="slider__arrow">
-                            <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M45.7071 7.29289C46.0976 7.68342 46.0976 8.31658 45.7071 8.70711L39.3431 15.0711C38.9526 15.4616 38.3195 15.4616 37.9289 15.0711C37.5384 14.6805 37.5384 14.0474 37.9289 13.6569L43.5858 8L37.9289 2.34315C37.5384 1.95262 37.5384 1.31946 37.9289 0.928932C38.3195 0.538408 38.9526 0.538408 39.3431 0.928932L45.7071 7.29289ZM0 7L45 7V9L0 9L0 7Z" fill="#D3BE73"/>
-                            </svg>
-                        </a>
+                <div class="wrapper intro__wrap">
+                    <div class="socials">
+                        <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/youtube.svg" alt="Youtube" class="socials__img"></a>
+                        <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/vk.svg" alt="VK" class="socials__img"></a>
+                        <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/instagram.svg" alt="Instagram" class="socials__img"></a>
                     </div>
-                </div>
-                <!-- 
-                <div class="swiper">
-                    // Additional required wrapper
-                    <div class="swiper-wrapper">
-                      //Slides
-                      <div class="swiper-slide"><img src="./assets/img/image_1.jpg" alt="Стул"></div>
-                      <div class="swiper-slide"><img src="./assets/img/image_1.jpg" alt="Стул"></div>
-                      <div class="swiper-slide"><img src="./assets/img/image_1.jpg" alt="Стул"></div>
-                      ...
+                    <div class="slider">
+                        <div class="slider_swiper swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slider -->
+                                <div class="swiper-slide">
+                                    <img src="./assets/img/image_1.jpg" alt="Стул">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slider__arrows">
+                            <a href="#prev" class ="slider__arrow">
+                                <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM46 7L1 7V9L46 9V7Z" fill="#D3BE73"/>
+                                </svg>
+                            </a>
+                            <a href="#next" class ="slider__arrow">
+                                <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M45.7071 7.29289C46.0976 7.68342 46.0976 8.31658 45.7071 8.70711L39.3431 15.0711C38.9526 15.4616 38.3195 15.4616 37.9289 15.0711C37.5384 14.6805 37.5384 14.0474 37.9289 13.6569L43.5858 8L37.9289 2.34315C37.5384 1.95262 37.5384 1.31946 37.9289 0.928932C38.3195 0.538408 38.9526 0.538408 39.3431 0.928932L45.7071 7.29289ZM0 7L45 7V9L0 9L0 7Z" fill="#D3BE73"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    //If we need pagination
-                    <div class="swiper-pagination"></div>
-                  
-                    //If we need navigation buttons
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  
-                    //If we need scrollbar
-                    <div class="swiper-scrollbar"></div>
-                  </div>
-                -->
-                <div class="intro__order">
-                    <div class="intro__order-bg">
-                        <div class="h1-box"><h1>Производим<br>столы и стулья<br>в Санкт-Петербурге</h1></div>
-                        <div class="intro__text"><p class="intro__text-p">Исключительно из экологически чистых материалов для офиса и дома. Доставляем<br>на следующий день</p></div>
-                    </div>
-                    <div class="intro__button-box">
-                        <button class="intro__button">Заказать мебель</button>
-                    </div>
-                </div>
+                    <!-- 
+                    <div class="swiper">
 
+                        //If we need pagination
+                        <div class="swiper-pagination"></div>
+                    
+                        //If we need navigation buttons
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        //If we need scrollbar
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    -->
+                    <div class="intro__order">
+                        <div class="intro__box">
+                            <h1>Производим<br>столы и стулья<br>в Санкт-Петербурге</h1>
+                            <p class="intro__subtitle">Исключительно из экологически чистых материалов для офиса и дома. Доставляем<br>на следующий день</p>
+                        </div>
+                        <div class="intro__button-box">
+                            <button class="intro__button btn">Заказать мебель</button>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="about" id="about"></section>
