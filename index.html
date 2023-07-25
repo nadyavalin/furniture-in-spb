@@ -23,28 +23,25 @@
                             <li>
                                 <a href=#about>О компании</a>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <a href=#catalog>Каталог</a>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <a href=#reviews>Отзывы</a>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <a href=#questions>Часто задаваемые вопросы</a>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <a href=#contacts>Контакты</a>
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="header__contacts">
                     <a href="tel:88002060107" class="header__phone">8 (800) 206 01 07</a>
@@ -55,11 +52,11 @@
         <main>
             <section class="intro">
                 <div class="wrapper intro__wrap">
-                    <div class="socials">
-                        <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/youtube.svg" alt="Youtube" class="socials__img"></a>
-                        <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/vk.svg" alt="VK" class="socials__img"></a>
-                        <a href="#" class="socials__link" target="_blank"><img src="./assets/svg/instagram.svg" alt="Instagram" class="socials__img"></a>
-                    </div>
+                    <ul class="socials">
+                        <li><a href="#" class="socials__link" target="_blank"><img src="./assets/svg/youtube.svg" alt="Youtube" class="socials__img"></a></li>
+                        <li><a href="#" class="socials__link" target="_blank"><img src="./assets/svg/vk.svg" alt="VK" class="socials__img"></a></li>
+                        <li><a href="#" class="socials__link" target="_blank"><img src="./assets/svg/instagram.svg" alt="Instagram" class="socials__img"></a></li>
+                    </ul>
                     <div class="slider">
                         <div class="slider_swiper swiper">
                             <div class="swiper-wrapper">
@@ -83,33 +80,47 @@
                             </a>
                         </div>
                     </div>
-                    <!-- 
-                    <div class="swiper">
-
-                        //If we need pagination
-                        <div class="swiper-pagination"></div>
-                    
-                        //If we need navigation buttons
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    
-                        //If we need scrollbar
-                        <div class="swiper-scrollbar"></div>
-                    </div>
-                    -->
                     <div class="intro__order">
                         <div class="intro__box">
                             <h1>Производим<br>столы и стулья<br>в Санкт-Петербурге</h1>
-                            <p class="intro__subtitle">Исключительно из экологически чистых материалов для офиса и дома. Доставляем<br>на следующий день</p>
+                            <p class="intro__subtitle">Исключительно из экологически чистых материалов для офиса и дома. Доставляем на следующий день</p>
                         </div>
-                        <div class="intro__button-box">
-                            <button class="intro__button btn">Заказать мебель</button>
+                        <button class="btn btn_desktop">Заказать мебель</button>
+                        <button class="btn btn_mobile">Заказать</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="wrapper">
+                    <div class="about__block">
+                        <h2>О компании</h2>
+                        <p class="about__text about__block_first-paragraph">Мы являемся одним из ведущих производителей столов и стульев для дома и офиса на Российском рынке, начиная с 2009 года. Вся наша мебель изготавливается преимущественно в стиле лофт и в минимализме, что помогает преобразить интерьер, и только из экологически чистых материалов.</p>
+                        <p class="about__text about__block_second-paragraph">При производстве своей мебели наша компания использует современное оборудование — это значительно повышает качество мебели и клиентоориентированность нашей компании</p>
+                    </div>
+                    <div class="about__qualities">
+                        <div class="about__quality">
+                            <div class="about__qualiy_title">
+                                <img src="./assets/svg/hammer.svg" alt="Hammer" class="hammer"><h3>Быстрое изготовление</h3>
+                            </div>
+                            <p class="about__text">У нас свой цех, склад и своя логистика. Это позволяет не зависеть от сторонних ТК и доставлять заказы день в день по Санкт-Петербургу</p>
+                        </div>
+                        <div class="about__quality">
+                            <div class="about__qualiy_title">
+                                <img src="./assets/svg/forest.svg" alt="Tree" class="tree"><h3>Экологически<br>чистые материалы</h3>
+                            </div>
+                            <p class="about__text">Все наши столы и стулья изготавливаются из ангарской сосны, берёзы и бука, что делают их безопасными для ваших детей и домашних питомцев</p>
+                        </div>
+                        <div class="about__quality">
+                            <div class="about__qualiy_title">
+                                <img src="./assets/svg/shield.svg" alt="Shield" class="shield"><h3>Гарантия на всю<br>мебель &mdash; 1 год</h3>
+                            </div>
+                             <p class="about__text">На всю мебель мы даём безоговорочную гарантию 1 год. Даже если вы у нас захотите заказать всего-лишь один стульчик — гарантия будет</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="about" id="about"></section>
             <section class="catalog" id="catalog"></section>
             <section class="form-order"></section>
             <section class="info"></section>
