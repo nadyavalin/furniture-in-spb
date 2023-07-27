@@ -234,7 +234,7 @@ main {
     z-index: 1;
 }
 
-.intro__box {
+.intro__box, .info__box {
     background-color: #F9F9F9;
     padding: 60px 0 60px 55px;
 }
@@ -444,6 +444,120 @@ h3 {
 
 .swiper-pagination-clickable {
     background-color: #F9F9F9;
+}
+
+.order-steps {
+    display: flex;
+    gap: 125px;
+}
+
+.order-step {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-step__number {
+    color: #C6B166;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'dlig' on;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.order-step__text {
+    width: 336px;
+    line-height: 31px;
+    margin-bottom: 5px;
+}
+
+.order-step__link {
+    color: #C6B166;
+    font-weight: 600;
+    line-height: 31px;
+}
+
+.form {
+    margin-top: 65px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.form__input {
+    width: 260px;
+    height: 57px;
+    border: none;
+    border-bottom: 1px solid #D3BE73;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+
+    color: #6A716F;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.98px;
+    text-transform: uppercase;
+    padding-bottom: 36px;
+}
+
+.form__button {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: -20px;
+}
+
+.form__datas {
+    color: #6A716F;
+    width: 344px;
+}
+
+.font__datas-text {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.form__datas_link {
+    color: #C6B166;
+}
+
+.info__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    left: 432px;
+    top: -700px;
+}
+
+.info__title {
+    width: 670px;
+}
+
+.info__text-1 {
+    color: #27302E;
+    line-height: 31px;
+    width: 845px;
+}
+
+.info__text-2 {
+    color: #27302E;
+    line-height: 31px;
+    width: 821px;
+}
+
+.consultation__title {
+    width: 650px;
+}
+
+.consultation__text {
+    line-height: 31px;
+    width: 560px;
 }
 
 @media (max-width: 1440px) {
