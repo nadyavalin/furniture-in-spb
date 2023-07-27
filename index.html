@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Столы и стулья в Санкт-Петербурге</title>
 </head>
@@ -61,12 +62,12 @@
                         <div class="slider_swiper swiper">
                             <div class="swiper-wrapper">
                                 <!-- Slider -->
-                                <div class="swiper-slide">
+                                <div class="swiper-slider">
                                     <img src="./assets/img/image_1.jpg" alt="Стул">
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="slider__arrows">
                             <a href="#prev" class ="slider__arrow intro__slider-arrow_size">
                                 <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,52 +133,139 @@
                             <img src="./assets/svg/instagram.svg" alt="Instagram" class="instagram"><a href="#" class="link__underline" target="_blank">Смотреть работы в нашем Instagram</a>
                         </div>
                     </div>
-                    <div class="catalog__photos">
-                        <div class="catalog__photo-1">
-                            <div class="catalog__photo-block_cost">
-                                <p class="catalog__photo_cost">2&nbsp;650&nbsp;&#8381;</p>
+                    <div class="catalog__body">
+                        <!-- Swiper -->
+                        <div class="catalog__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <!-- First catalog block -->
+                                <div class="catalog__slide swiper-slider">
+                                    <div class="catalog__card">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_frank.jpg" alt="Стул Франк">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">2&nbsp;650&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Стул &laquo;Франк&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 3 дня</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__slide swiper-slider">
+                                    <div class="catalog__card catalog__card_mini">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_set_olympus.jpg" alt="Комплект Олимпус">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">7&nbsp;490&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Комплект &laquo;Олимпус&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 7 дней</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_dark.jpg" alt="Стул Дарк">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">3&nbsp;450&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Стул &laquo;Дарк&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 2 дня</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__slide swiper-slider">
+                                    <div class="catalog__card">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_table_set_rumy.jpg" alt="Комплект из стула и стола Руми">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">9&nbsp;850&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Комплект из стула и стола &laquo;Руми&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 7 дней</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Second catalog block-->
+                                <div class="catalog__slide swiper-slider">
+                                    <div class="catalog__card">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_frank.jpg" alt="Стул Франк">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">2&nbsp;650&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Стул &laquo;Франк&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 3 дня</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__slide swiper-slider">
+                                    <div class="catalog__card catalog__card_mini">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_set_olympus.jpg" alt="Комплект Олимпус">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">7&nbsp;490&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Комплект &laquo;Олимпус&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 7 дней</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__card">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_dark.jpg" alt="Стул Дарк">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">3&nbsp;450&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Стул &laquo;Дарк&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 2 дня</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__slide swiper-slider">
+                                    <div class="catalog__card">
+                                        <div class="catalog__img">
+                                            <img src="./assets/img/chair_table_set_rumy.jpg" alt="Комплект из стула и стола Руми">
+                                        </div>
+                                        <div class="catalog__cost">
+                                            <p class="catalog__cost-text">9&nbsp;850&nbsp;&#8381;</p>
+                                        </div>
+                                        <div class="catalog__title">
+                                            <span class="catatlog__title-1">Комплект из стула и стола &laquo;Руми&raquo;</span>
+                                            <span class="catatlog__title-2">Срок изготовления: 7 дней</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="catalog__photo-block_title">
-                                <span class="catatlog__photo_title-1">Стул &laquo;Франк&raquo;</span>
-                                <span class="catatlog__photo_title-2">Срок изготовления: 3 дня</span>
-                            </div>
-                        </div>
-                        <div class="catalog__photo-2">
-            
-                        </div>
-                        <div class="catalog__photo-3">
-                            
-                        </div>
-                        <div class="catalog__photo-4">
-                            
                         </div>
                     </div>
-
                     <div class="catalog__wrapper_nav">
                         <div class="catalog__nav">
-                            <a href="#prev" class ="slider__arrow catalog__slider-arrow_size">
+                            <a href="#prev" class ="slider__arrow catalog__slider-arrow_size arrow-prev">
                                 <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM46 7L1 7V9L46 9V7Z" fill="#D3BE73"/>
                                 </svg>
                             </a>
-                            <div class="pagination">
-                                <div class="pagination-block">
-                                    <div class ="circle circle_checked"></div>
-                                </div>
-                                <div class="pagination-block">
-                                    <div class="circle circle_unchecked"></div>
-                                </div>
-                                <div class="pagination-block circle_unchecked">
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <a href="#next" class ="slider__arrow catalog__slider-arrow_size">
+                            <div class="swiper-pagination"></div>
+                            <a href="#next" class ="slider__arrow catalog__slider-arrow_size arrow-next">
                                 <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M45.7071 7.29289C46.0976 7.68342 46.0976 8.31658 45.7071 8.70711L39.3431 15.0711C38.9526 15.4616 38.3195 15.4616 37.9289 15.0711C37.5384 14.6805 37.5384 14.0474 37.9289 13.6569L43.5858 8L37.9289 2.34315C37.5384 1.95262 37.5384 1.31946 37.9289 0.928932C38.3195 0.538408 38.9526 0.538408 39.3431 0.928932L45.7071 7.29289ZM0 7L45 7V9L0 9L0 7Z" fill="#D3BE73"/>
                                 </svg>
                             </a>
                         </div>
                     </div>
+
                 </div>
             </section>
             <section class="form-order"></section>
@@ -192,4 +280,6 @@
         </footer>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </html>

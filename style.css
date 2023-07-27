@@ -290,7 +290,7 @@ h3 {
 
 .about__block_second-paragraph {
     width: 876px;
-    padding-bottom: 65px; 
+    padding-bottom: 65px;
 }
 
 .about__qualities {
@@ -323,7 +323,7 @@ h3 {
 
 .shield {
     width: 55px;
-    height: 65px;  
+    height: 65px;
 }
 
 .catalog__intro {
@@ -342,80 +342,6 @@ h3 {
     height: 21px;
 }
 
-.catalog__photos {
-    display: grid;
-    grid-template-columns: repeat(3, 428px);
-    grid-template-rows: repeat(2, 446px);
-    gap: 20px;
-    grid-template-areas:
-    "a b d"
-    "a c d"
-}
-
-.catalog__photos > .catalog__photo-1 {
-    grid-area: a;
-    background-image: url("./assets/img/chair_frank.jpg");
-}
-  
-.catalog__photos > .catalog__photo-2 {
-    grid-area: b;
-    background-image: url("./assets/img/chair_set_olympus.jpg");
-}
-
-.catalog__photos > .catalog__photo-3 {
-    grid-area: c;
-    background-image: url("./assets/img/chair_dark.jpg");
-}
-
-.catalog__photos > .catalog__photo-4 {
-    grid-area: d;
-    background-image: url("./assets/img/chair_table_set_rumy.jpg");
-}
-
-.catalog__photo-1 {
-    display: inline;
-/*застряла c блоками цен и названий */
-}
-
-.catalog__photo-block_cost {
-    display: inline-flex;
-    background-color: #F9F9F9;
-    padding: 25px 30px;
-    align-items: flex-end;
-}
-
-.catalog__photo_cost {
-    color: #27302E;
-    text-align: right;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-feature-settings: 'dlig' on, 'ss02' on, 'ss01' on, 'salt' on;
-    font-family: 'Raleway';
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 35px;
-}
-
-.catalog__photo-block_title {
-    display: inline-flex;
-    background-color: #F9F9F9;
-    padding: 25px 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 7px;
-}
-
-.catatlog__photo_title-1 {
-    color: #27302E;
-    font-family: 'Raleway';
-    font-size: 20px;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.catatlog__photo_title-2 {
-    color: #6A716F;
-}
-
 .catalog__wrapper_nav {
     width: 100%;
     display: flex;
@@ -430,6 +356,71 @@ h3 {
     margin-top: 40px;
 }
 
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+    top: 0;
+}
+
+.catalog__card {
+    position: relative;
+}
+
+.catalog__card_mini {
+
+}
+
+.catalong__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.catalog__cost {
+    display: inline-flex;
+    background-color: #F9F9F9;
+    padding: 25px 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.catalog__cost-text {
+    color: #27302E;
+    text-align: right;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'dlig' on, 'ss02' on, 'ss01' on, 'salt' on;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.catalog__title {
+    display: inline-flex;
+    background-color: #F9F9F9;
+    padding: 25px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.catatlog__title-1 {
+    color: #27302E;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.catatlog__title-2 {
+    color: #6A716F;
+}
+
+/*
 .catalog__slider-arrow_size {
     width: 45px;
     height: 0;
@@ -470,6 +461,7 @@ h3 {
 .circle_unchecked:hover {
     opacity: 1.0;
 }
+*/
 
 @media (max-width: 1440px) {
     .wrapper {
@@ -525,7 +517,7 @@ h3 {
     .btn_desktop {
         display: none;
     }
-    
+
     .btn_mobile {
         display: block;
         height: 60px;
@@ -534,7 +526,7 @@ h3 {
         font-size: 14px;
         letter-spacing: 1.26px;
     }
-    
+
     .about__qualities {
         flex-direction: column;
         gap: 30px;
@@ -564,7 +556,7 @@ h3 {
     .header__contacts,
     .socials, .slider,
     .slider__arrows,
-    .swiper-slide {
+    .swiper-slider {
         display: none;
     }
 
