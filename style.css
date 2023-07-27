@@ -231,6 +231,7 @@ main {
     position: relative;
     left: -164px;
     top: 86px;
+    z-index: 1;
 }
 
 .intro__box {
@@ -346,28 +347,24 @@ h3 {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-top: 40px;
 }
 
 .catalog__nav {
     background-color: #F9F9F9;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 20px;
-    margin-top: 40px;
-}
-
-.swiper-pagination {
-    position: relative;
-    bottom: 0;
-    top: 0;
 }
 
 .catalog__card {
     position: relative;
+    top: 0;
+    bottom: 0;
 }
 
-.catalog__card_mini {
-
+.catalog__card_gap {
+    margin-top: 10px;
 }
 
 .catalong__img {
@@ -420,48 +417,34 @@ h3 {
     color: #6A716F;
 }
 
-/*
-.catalog__slider-arrow_size {
-    width: 45px;
-    height: 0;
-}
-
-.pagination {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-}
-
-.pagination-block {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+    top: 0;
     cursor: pointer;
 }
 
-.circle {
+.swiper-pagination-bullet {
     background-color: #6A716F;
+    opacity: 0.15;
     width: 10px;
     height: 10px;
     border-radius: 50px;
+    transition: opacity 0.3 ease; /* не работает */
 }
 
-.circle_checked {
+.swiper-pagination-bullet-active {
     background-color: #D3BE73;
-}
-
-.circle_unchecked {
-    transition: 0.3s ease;
-    opacity: 0.15;
-}
-
-.circle_unchecked:hover {
     opacity: 1.0;
 }
-*/
+
+.swiper-pagination-bullet:hover {
+    opacity: 1.0;
+}
+
+.swiper-pagination-clickable {
+    background-color: #F9F9F9;
+}
 
 @media (max-width: 1440px) {
     .wrapper {
@@ -554,7 +537,7 @@ h3 {
 
     nav,
     .header__contacts,
-    .socials, .slider,
+    .socials, .slider-block,
     .slider__arrows,
     .swiper-slider {
         display: none;
