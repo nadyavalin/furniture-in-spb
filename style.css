@@ -1,12 +1,15 @@
 *,
 *::after,
 *::before {
+    outline: none;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 0;
 }
 
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -16,7 +19,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    overflow-x: hidden;
+    line-height: 31px;
+    overflow-y: scroll;
 }
 
 button {
@@ -275,7 +279,6 @@ h3 {
 }
 
 .about__text {
-    line-height: 31px;
     width: 336px;
 }
 
@@ -341,6 +344,11 @@ h3 {
 .instagram {
     width: 21px;
     height: 21px;
+}
+
+.vk {
+    width: 21px;
+    height: 12px;
 }
 
 .catalog__wrapper_nav {
@@ -469,14 +477,12 @@ h3 {
 
 .order-step__text {
     width: 336px;
-    line-height: 31px;
     margin-bottom: 5px;
 }
 
 .order-step__link {
     color: #C6B166;
     font-weight: 600;
-    line-height: 31px;
 }
 
 .form {
@@ -525,14 +531,18 @@ h3 {
     color: #C6B166;
 }
 
+.info__block {
+    position: relative;
+}
+
 .info__box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    position: relative;
+    position: absolute;
+    top: 165px;
     left: 432px;
-    top: -700px;
 }
 
 .info__title {
@@ -541,13 +551,11 @@ h3 {
 
 .info__text-1 {
     color: #27302E;
-    line-height: 31px;
     width: 845px;
 }
 
 .info__text-2 {
     color: #27302E;
-    line-height: 31px;
     width: 821px;
 }
 
@@ -556,8 +564,193 @@ h3 {
 }
 
 .consultation__text {
-    line-height: 31px;
     width: 560px;
+}
+
+.reviews__block {
+    display: flex;
+    gap: 20px;
+}
+
+.review__box {
+    background-color: #FFFFFF;
+    width: 652px;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.review__contact {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.review__contact_img {
+    width: 60px;
+    height: 60px;
+}
+
+.review__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.review__name-item {
+    color: #27302E;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.review__social-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.review__social-item_vk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+
+.review__text-box {
+    width: 542px;
+}
+
+.review__text{
+    width: 478px;
+}
+
+.faq-block {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.faq-block__items {
+    background-color: #FFFFFF;
+    max-width: 1042px;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/*
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h4 {
+    color: #27302E;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 30px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4 ease;
+}
+
+.faq.active .answer {
+    max-height: 242px;
+}
+*/
+
+.accordion {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.accordion-header {
+    background-color: #FFFFFF;
+    color: #27302E;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 45px 55px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+.accordion-content__text {
+    padding-top: 30px;
+    padding-left: 55px;
+}
+
+.contacts-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contacts__title {
+    color: var(--black, #27302E);
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact__item {
+    color: #27302E;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact__item_address {
+    width: 200px;
+}
+
+.contacts {
+    margin-bottom: 160px;
+}
+
+.policy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+    margin-bottom: 91px;
 }
 
 @media (max-width: 1440px) {
