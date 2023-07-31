@@ -631,67 +631,43 @@ h3 {
 }
 
 .faq-block {
-    display: flex;
-    justify-content: flex-end;
     position: relative;
 }
 
+.faq-block__img {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .faq-block__items {
-    background-color: #FFFFFF;
     max-width: 1042px;
     margin-top: 40px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 7px;
+    position: absolute;
+    margin-top: -1000px;
 }
-
-/*
-.question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.question h4 {
-    color: #27302E;
-    font-family: 'Raleway';
-    font-size: 24px;
-    font-weight: 600;
-    line-height: normal;
-    padding-bottom: 30px;
-}
-
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1.4 ease;
-}
-
-.faq.active .answer {
-    max-height: 242px;
-}
-*/
 
 .accordion {
+    background-color: #FFFFFF;
     display: block;
-    margin-bottom: 7px;
+    padding: 55px 45px;
 }
 
 .accordion-header {
-    background-color: #FFFFFF;
     color: #27302E;
     font-family: 'Raleway';
     font-size: 24px;
     font-weight: 600;
     line-height: normal;
-    padding: 45px 55px;
     cursor: pointer;
+    transition: 0.3 ease;
 }
 
 .accordion-content {
     display: none;
-    padding: 10px;
 }
 
 .accordion-content.active {
@@ -700,7 +676,7 @@ h3 {
 
 .accordion-content__text {
     padding-top: 30px;
-    padding-left: 55px;
+    font-weight: 400;
 }
 
 .contacts-block {
