@@ -22,6 +22,36 @@ var swiper = new Swiper(".catalog__swiper", {
     },
 });
 
+// Slider for the review block
+var swiper = new Swiper(".review__swiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-review-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".arrow-review-next",
+    prevEl: ".arrow-review-prev",
+  },
+});
+
+// Аккордеон
+// Получаем все элементы аккордеона
+const accordions = document.querySelectorAll('.accordion');
+
+// Добавляем обработчик клика для каждой секции аккордеона
+accordions.forEach((accordion) => {
+	const header = accordion.querySelector('.accordion-header');
+	const content = accordion.querySelector('.accordion-content');
+
+  // Скрываем/показываем содержимое при клике на заголовок
+	header.addEventListener('click', () => {
+		header.classList.toggle('active');
+    content.classList.toggle('active');
+	});
+});
+
 // Phone
 // пока не работает
 var cleave = new Cleave('form__tel', {
