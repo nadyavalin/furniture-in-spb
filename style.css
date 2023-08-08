@@ -167,6 +167,24 @@ main {
     justify-content: space-between;
 }
 
+.intro__slider {
+    width: 590px;
+}
+
+.intro__slide {
+    width: 100%;
+    height: 825px;
+}
+
+.intro__img, .intro__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.intro__img img {
+    object-fit: cover;
+}
+
 .socials {
     display: flex;
     justify-content: center;
@@ -285,16 +303,9 @@ h3 {
 .about__block {
     display: flex;
     flex-direction: column;
-}
-
-.about__block_first-paragraph {
-    width: 856px;
-    margin-bottom: 15px;
-}
-
-.about__block_second-paragraph {
-    width: 876px;
-    padding-bottom: 65px;
+    max-width: 860px;
+    gap: 15px;
+    margin-bottom: 50px;
 }
 
 .about__qualities {
@@ -309,7 +320,7 @@ h3 {
     gap: 20px;
 }
 
-.about__qualiy_title {
+.about__title {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -426,10 +437,12 @@ h3 {
 }
 
 .swiper-pagination {
+    height: 27px;
     position: relative;
-    bottom: 0;
-    top: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease; /* не работает */
 }
 
 .swiper-pagination-bullet {
@@ -438,16 +451,16 @@ h3 {
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    transition: opacity 0.3 ease; /* не работает */
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #D3BE73;
     opacity: 1.0;
+    background-color: #D3BE73;
 }
 
 .swiper-pagination-bullet:hover {
     opacity: 1.0;
+    background-color: #D3BE73;
 }
 
 .swiper-pagination-clickable {
@@ -480,9 +493,25 @@ h3 {
     margin-bottom: 5px;
 }
 
-.order-step__link {
+.order-step__text a {
+    display: inline-flex;
+    justify-content: flex-end;
     color: #C6B166;
+    text-decoration: underline 1px rgba(198, 177, 102, 0);
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+    text-underline-offset: 0.5em;
+    font-size: 16px;
     font-weight: 600;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.order-step__text a:hover {
+    color: #C6B166;
+    text-decoration-color: #C6B166;
+    text-underline-offset: 0.4em;
 }
 
 .form {
@@ -522,13 +551,30 @@ h3 {
     width: 344px;
 }
 
+.form__datas a {
+    display: inline-flex;
+    justify-content: flex-end;
+    color: #C6B166;
+    text-decoration: underline 1px rgba(198, 177, 102, 0);
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+    text-underline-offset: 0.5em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.form__datas a:hover {
+    color: #C6B166;
+    text-decoration-color: #C6B166;
+    text-underline-offset: 0.4em;
+}
+
 .font__datas-text {
     font-size: 13px;
     line-height: 21px;
-}
-
-.form__datas_link {
-    color: #C6B166;
 }
 
 .info__block {
@@ -543,36 +589,22 @@ h3 {
     position: absolute;
     top: 165px;
     left: 432px;
+    max-width: 850px;
 }
 
-.info__title {
-    width: 670px;
-}
-
-.info__text-1 {
+.info__box p b {
     color: #27302E;
-    width: 845px;
-}
-
-.info__text-2 {
-    color: #27302E;
-    width: 821px;
-}
-
-.consultation__title {
-    width: 650px;
 }
 
 .consultation__text {
-    width: 560px;
+    max-width: 650px;
 }
 
 .reviews__block {
     display: flex;
-    gap: 20px;
 }
 
-.review__box {
+.review__block {
     background-color: #FFFFFF;
     width: 652px;
     padding: 55px;
@@ -630,40 +662,61 @@ h3 {
     width: 478px;
 }
 
-.faq-block {
+.faq {
     position: relative;
+    padding: 145px 0;
 }
 
-.faq-block__img {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.faq-block__items {
-    max-width: 1042px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 7px;
+.faq__img {
     position: absolute;
-    margin-top: -1000px;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.faq__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faq-block__container {
+    max-width: 1042px;
+    position: relative;
+    z-index: 5;
 }
 
 .accordion {
     background-color: #FFFFFF;
-    display: block;
     padding: 55px 45px;
 }
 
+.accordion + .accordion {
+    margin-top: 7px;
+}
+
 .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #27302E;
     font-family: 'Raleway';
     font-size: 24px;
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
+}
+
+.accordion-header svg {
+    transition: all 0.3s ease;
+}
+
+.accordion-header.active svg {
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
 }
 
 .accordion-content {
@@ -716,6 +769,7 @@ h3 {
 
 .contact__item_address {
     width: 200px;
+    font-style: normal;
 }
 
 .contacts {
@@ -724,9 +778,20 @@ h3 {
 
 .policy {
     display: flex;
-    justify-content: space-between;
     margin-top: 47px;
     margin-bottom: 91px;
+}
+
+.policy__text {
+    color: #6A716F;
+}
+
+.policy__text_copyrights {
+    margin-right: 145px;
+}
+
+.policy__text_agreement {
+    margin-right: 65px;
 }
 
 @media (max-width: 1440px) {
