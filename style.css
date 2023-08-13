@@ -751,6 +751,10 @@ h3 {
     transition: 0.3s ease;
 }
 
+.accordion-header__span-size {
+    flex: 1;
+}
+
 .accordion-header svg {
     transition: all 0.3s ease;
 }
