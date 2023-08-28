@@ -435,7 +435,7 @@ h3 {
     margin-top: 20px;
 }
 
-.catalog__img .catalog__img img {
+.catalog__img, .catalog__img img {
     width: 100%;
     height: 100%;
 }
