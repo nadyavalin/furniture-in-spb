@@ -420,15 +420,27 @@ h3 {
     position: relative;
     top: 0;
     bottom: 0;
+    height: 100%;
+}
+
+.catalog__slide {
+    height: 912px;
 }
 
 .catalog__card_gap {
-    margin-top: 10px;
+    height: calc(50% - 10px);
 }
 
-.catalong__img {
+.catalog__card_gap + .catalog__card_gap {
+    margin-top: 20px;
+}
+
+.catalog__img .catalog__img img {
     width: 100%;
     height: 100%;
+}
+
+.catalog__img img {
     object-fit: cover;
 }
 
@@ -899,7 +911,7 @@ h3 {
         align-items: center;
         justify-content: center;
     }
-    
+
     .header__container nav ul a {
         width: 100%;
         display: flex;
@@ -1188,7 +1200,7 @@ h3 {
         margin-right: 0;
         margin-bottom: 20px;
     }
-    
+
     .policy__text_agreement {
         margin-right: 0;
         margin-bottom: 7px;
