@@ -21,8 +21,8 @@ var swiper = new Swiper(".catalog__swiper", {
     prevEl: ".arrow-prev",
   },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
+    10: {
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     760: {
@@ -49,8 +49,8 @@ var swiper = new Swiper(".review__swiper", {
     prevEl: ".arrow-review-prev",
   },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
+    10: {
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     760: {
